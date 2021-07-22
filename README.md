@@ -12,23 +12,23 @@ Please Note that the input command in C++ is std::cin. This is a representation 
 
 
 e.g. 
-```c
+c
 float data1;
 int data2;
 scanf("%f", &data1); --> std::cin >> data1;
 scanf("%d", &data2); --> std::cin >> data2; 
-```
 
 
-You already know that ```printf()``` in C is ```std::cout``` in C++
+
+You already know that printf() in C is std::cout in C++
 e.g.
-```
+
 printf("Hello World") --> std::cout << "Hello World";
-```
+
 
 2.54cm = 1 inch
 
-```c
+c
 #include <stdio.h>
 void main(void) 
 {
@@ -38,7 +38,7 @@ void main(void)
     inches = cm / 2.54;
     printf("Length in inches is %f \n", inches);
 }   
-```
+
 
 ## Exercise 2 - Selection
 
@@ -47,19 +47,19 @@ Convert the C program given below which calculates an employee's salary to a C++
 
 
 Input Type, Salary, otHours
-```
+
 Type = 1
 OtRate = 1000
 Type = 2
 OtRate = 1500
 Type = 3
 OtRate = 1700
-```
+
 
 
 Please Note that the input command in C++ is std::cin. This is a representation of the Keyboard.
 
-```c
+c
 #include <stdio.h>
 void main(void)
 {
@@ -88,16 +88,16 @@ void main(void)
    netSalary = salary + otHrs* otRate;
    printf("Net Salary is %f ", netSalary);
 }
-```
+
 
 ## Exercise 3 - Repeatition
 
 
 Convert the C program given below which calculates the Factorial of a number that you input from the keyboard to a C++ program.
 
-Please Note that the input command in C++ is ```std::cin```. This is a representation of the Keyboard.
+Please Note that the input command in C++ is std::cin. This is a representation of the Keyboard.
 
-```c
+c
 #include <stdio.h>
 void main(void)
 {
@@ -114,25 +114,25 @@ void main(void)
 
     printf("Factorial of %d is %ld\n", no, fac);    
 }
-```
+
  
 ## Exercise 4 - Functions
 Write a program to calculate the function called nCr which is defined as
-```
+
 nCr = n!/ r!(n−r)!
-```
+
 
 Where n! is the factorial of n.
 
 Implement the functions
-```
+
 long Factorial(int no);
 long nCr(int n, int r);
-```
+
 
 Do not modify the main function.
 
-```c
+c
 #include <iostream>
 
 long Factorial(int no);
@@ -148,5 +148,3 @@ int main() {
   std::cout << nCr(n,r);
   std::cout << std::endl;
 }
-```
-
